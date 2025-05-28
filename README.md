@@ -23,7 +23,7 @@ This script implements three estimators for causal inference:
 3. **Augmented Inverse Probability Weighting (AIPW)**  
 
 Key features:  
-- Uses cross-fitting to avoid overfitting in nuisance function estimation (`Marginal_Cox_Instrumental()`).  
+- Uses K-fold cross-fitting in nuisance function estimation (`Marginal_Cox_Instrumental()`).  
 - Estimates nuisance functions via `train_nuisance_func()`.  
 - Provides visualization tools:  
   - `plot_MCI_Surv()`: Plots potential survival curves for all three estimators.  
