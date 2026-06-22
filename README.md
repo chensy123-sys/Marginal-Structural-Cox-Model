@@ -54,10 +54,8 @@ The outcome of interest is the hazard rate of reemployment (`REHIREDT`).
 ### Included Covariates  
 The analysis adjusts for the following confounders:  
 ```python
-['AGE', 'AVPREARN', 'CLAIMDT', 'DEPALLOW', 'ELIG2', 'L1QWAGES',
-'L2QWAGES', 'L3QWAGES', 'L4QWAGES', 'MALE', 'NOHSUB', 'NOHSUB1',
-'POSPEARN', 'POSQEARN', 'PREPEARN', 'RHIREARN', 'WGETOT1', 'WGETOT2',
-'WGETOT3', 'WGETOT4', 'WGETOT5', 'WGETOT6',
+['AGE', 'CLAIMDT', 'MALE',
+'AVPREARN', 'PREPEARN',
 'RACE_Hispanic', 'RACE_NativeAmerican', 'RACE_Other', 'RACE_White']
 ```
 
