@@ -59,5 +59,22 @@ The analysis adjusts for the following confounders:
 'RACE_Hispanic', 'RACE_NativeAmerican', 'RACE_Other', 'RACE_White']
 ```
 
-### Bootstrap Procedure  
+### Simulation
 The analysis was repeated **500 times** to construct confidence bands for the AIPW, IPW, and OR estimators.  
+Conduct the following code in the terminal to recover the simulation results needed for running `simulation.ipynb`.
+```terminal
+nohup python script3/scenario1.py  > logs/scenario1.log 2>&1 & 
+nohup python script3/scenario2.py  > logs/scenario2.log 2>&1 & 
+nohup python script3/scenario3.py  > logs/scenario3.log 2>&1 & 
+nohup python script3/scenario4.py  > logs/scenario4.log 2>&1 & 
+nohup python script4/scenario1.py  > logs/scenario1_2.log 2>&1 & 
+nohup python script4/scenario2.py  > logs/scenario2_2.log 2>&1 & 
+nohup python script4/scenario3.py  > logs/scenario3_2.log 2>&1 & 
+nohup python script4/scenario4.py  > logs/scenario4_2.log 2>&1 & 
+nohup python script5/scenario1.py  > logs/scenario1_3.log 2>&1 & 
+nohup python script5/scenario2.py  > logs/scenario2_3.log 2>&1 & 
+nohup python script5/scenario3.py  > logs/scenario3_3.log 2>&1 & 
+nohup python script5/scenario4.py  > logs/scenario4_3.log 2>&1 &
+```
+
+
