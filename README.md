@@ -60,19 +60,4 @@ The analysis adjusts for the following confounders:
 ```
 
 ### Bootstrap Procedure  
-The analysis was repeated **1,000 times** to construct confidence bands for the AIPW, IPW, and OR estimators.  
-
----
-
-## Simulation Results  
-
-Contains all simulation results from the accompanying article. Each setting evaluates eight different nuisance function estimation methods.  
-
-### File Naming Convention  
-Example: `cox_rsf_gam1000.pkl`  
-- **First term (`cox`)** → $S_C(t|Z,A,X)$ estimated via Cox PH regression.  
-- **Second term (`rsf`)** → $S_D(t|Z,A,X)$ estimated via Random Survival Forest.  
-- **Third term (`gam`)** → $\pi(X,Z)$ and $f(X)$ estimated via Generalized Additive Model.  
-- **Suffix (`1000`)** → Repeated times.  
-
-This structured naming allows easy interpretation of the estimation approaches used in each simulation.
+The analysis was repeated **500 times** to construct confidence bands for the AIPW, IPW, and OR estimators.  
